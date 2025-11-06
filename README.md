@@ -1,4 +1,5 @@
 # FocusFlow
+# https://nicktask.vercel.app
 
 An intelligent daily task planner that uses AI-powered optimization algorithms (0/1 Knapsack or Fractional Knapsack) to optimize your schedule based on task duration, priority, and category.
 
