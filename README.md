@@ -21,7 +21,7 @@ An intelligent daily task planner that uses AI-powered optimization algorithms (
 
 ## Project Structure
 
-\`\`\`
+```
 FocusFlow/
 ├── index.html              # Main HTML file (root)
 ├── style.css               # Styles (root)
@@ -38,7 +38,7 @@ FocusFlow/
 │   └── firebase_connect.py # Firebase integration
 ├── vercel.json             # Vercel configuration
 └── README.md
-\`\`\`
+```
 
 ## Firebase Setup
 
@@ -53,23 +53,23 @@ FocusFlow/
 ## Local Development
 
 1. Install Python dependencies:
-   \`\`\`
+   ```
    bash
    pip install -r api/requirements.txt
-   \`\`\`
+   ```
 
 2. Set environment variables:
-   \`\`\`
+   ```
    bash
    export FIREBASE_SERVICE_ACCOUNT_JSON='{"type":"service_account",...}'
    export FIREBASE_DATABASE_URL='https://your-project.firebaseio.com'
-   \`\`\`
+   ```
 
 3. Run locally with Vercel CLI:
-   \`\`\`
+   ```
    bash
    vercel dev
-   \`\`\`
+   ```
 
 ## API Endpoints
 
@@ -77,7 +77,7 @@ FocusFlow/
 Optimizes tasks using selected algorithm (0/1 Knapsack or Fractional Knapsack).
 
 **Request Body:**
-\`\`\`
+```
 json
 {
   "tasks": [
@@ -91,10 +91,10 @@ json
   "available_time": 480,
   "method": "0/1"
 }
-\`\`\`
+```
 
 **Response:**
-\`\`\`
+```
 json
 {
   "optimized_tasks": [...],
@@ -104,7 +104,7 @@ json
   "explanation": "Optimized for maximum productivity...",
   "partial_inclusion": false
 }
-\`\`\`
+```
 
 ### POST /api/save
 Saves tasks and plan to Firebase.
@@ -140,10 +140,10 @@ Loads previous tasks and plans from Firebase.
 
 Deploy to Vercel with one click:
 
-\`\`\`
+```
 bash
 vercel --prod
-\`\`\`
+```
 
 Make sure to add your Firebase environment variables in the Vercel dashboard.
 
